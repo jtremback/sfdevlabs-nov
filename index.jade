@@ -1,0 +1,121 @@
+extends layout
+
+block content
+  nav#main-nav.navbar.navbar-default.navbar-elegant.hidden-sm.hidden-xs(role='navigation' data-spy="affix" data-offset-top="50")
+    .container
+      ul.nav.navbar-nav.center-block
+        li.active
+          a(href='#about') About
+        li
+          a(href='#services') Services
+        li
+          a(href='#process') Process
+        li
+          a(href='#contact') Contact
+
+  .bg-image.bg-image-one.text-center
+    img.img-responsive.main-logo(src="./images/large_logo.png")
+    svg.crossed-seperator.crossed-seperator-bottom(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 100', preserveaspectratio='none')
+      path.one(d='M0 100 L100 100 L0 0 Z').
+      path.two(d='M0 100 L100 100 L100 0 Z')
+
+  section#about
+    .container
+      .sectitle 
+        h1 Modern, reliable web apps.
+        p.lead
+          | SF Dev Labs is a software development consultancy that specializes in building reliable, scalable web applications for industry and enterprise clients.
+
+      .row
+        .col-sm-6
+          p Many businesses want to upgrade to a newer, better web application frontend, while retaining the proven reliability of their existing enterprise server and database solutions. We enable this transition.
+          p We leverage existing infrastructure and combine this with the latest web application frameworks to develop cost-effective technology solutions for our clients.
+          h4 Why web apps?
+          ul
+            //- li Web application development means providing for your present business needs while being prepared for the future.
+            li Cloud-based businesses operate in the browser on any device without the need to download or update software.
+            li Modern development frameworks allow rapid development and deployment that is scalable, reliable and cost-effective.
+            li Web apps incorporate modern technologies including VOIP, video-chat, cloud-storage, usage monitoring, and more.
+        .col-sm-6
+          img.img-responsive(src="./images/frameworks.png")
+
+  .bg-image.bg-image-two.text-center
+    svg.crossed-seperator.crossed-seperator-top(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 102', preserveaspectratio='none')
+      path.one(d='M0 0 L100 100 L100 0 Z')
+      path.two(d='M0 100 L100 0 L0 0 Z')
+    svg.crossed-seperator.crossed-seperator-bottom(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 100', preserveaspectratio='none')
+      path.one(d='M0 100 L100 100 L0 0 Z')
+      path.two(d='M0 100 L100 100 L100 0 Z')
+
+  section#services
+    .container
+      h1.sectitle What we do.        
+      .row
+        .col-md-4.bullet-block
+          img(src="./images/product-definition.png")
+          .bullet-block-text  
+            h4 Product Definition
+            p Using competitive analysis, rapid prototyping, and design thinking, our experienced product managers and designers will consult with your team to flesh out the best possible solution to your business’s unique software needs.
+
+        .col-md-4.bullet-block
+          img(src="./images/development.png")
+          .bullet-block-text  
+            h4 Agile Development
+            p We practice Agile development to give you full transparency into how the project is progressing. Continuous testing and deployment allow us to validate features as they are being built, and shoot down bugs before they become a problem.
+
+        .col-md-4.bullet-block
+          img(src="./images/design.png")
+          .bullet-block-text  
+            h4 Responsive Design
+            p Our apps are built from the ground up to be mobile responsive and look great on any device. We do user research and needs discovery with your team to determine the best possible experience for your clients and employees using the app. 
+
+
+
+  .bg-image.bg-image-three.text-center
+    svg.crossed-seperator.crossed-seperator-top(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 102', preserveaspectratio='none')
+      path.one(d='M0 0 L100 100 L100 0 Z')
+      path.two(d='M0 100 L100 0 L0 0 Z')
+    svg.crossed-seperator.crossed-seperator-bottom(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 100', preserveaspectratio='none')
+      path.one(d='M0 100 L100 100 L0 0 Z')
+      path.two(d='M0 100 L100 100 L100 0 Z')
+
+
+
+  section#process
+    .container
+      h1.sectitle How we do it.
+      .row
+        .col-md-4.bullet-block
+          img(src="./images/enterprise-database.png")
+          .bullet-block-text  
+            h4 Existing IT infrastructure
+            p Your reliable, trusted database and server infrastructure can stay in place. Your business does not need to upgrade the entire IT stack to take advantage of a modern web application.
+
+        .col-md-4.bullet-block
+          img(src="./images/node-cloud.png")
+          .bullet-block-text  
+            h4 Node.js cloud API server
+            p We build node.js servers that act as a translation layer on top of your existing solutions, querying your database through its existing tech stack, while serving a modern JSON API.
+
+        .col-md-4.bullet-block
+          img(src="./images/responsive-app.png")
+          .bullet-block-text  
+            h4 Modern web application
+            p Using the JSON API served from node.js, we build a web application using the latest html5 and css3 technologies that is performant and works on any device. You can have your cake and eat it too!
+
+
+  section#contact.footer
+    svg.crossed-seperator(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 100', preserveaspectratio='none')
+      path.one(d='M0 0 L100 100 L100 0 Z')
+      path.two(d='M0 100 L100 0 L0 0 Z')
+    h1.sectitle Contact Us:
+    .biz-card
+      img.img-responsive.card-logo(src="./images/large_logo.png")
+      address
+        strong SF Dev Labs
+        br
+        | 835a Divisidero St.
+        br
+        | San Francisco, CA 94107
+        br
+        | <a href="mailto:team@sfdevlabs.com">team@sfdevlabs.com</a>
